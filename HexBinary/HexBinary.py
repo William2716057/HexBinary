@@ -1,5 +1,5 @@
 #Hex to binary converter 
-
+hexadecimal = input("Enter Hex: ")
 def hexToBinary(hexInput):
     try:
         #convert hex to integer 
@@ -7,4 +7,10 @@ def hexToBinary(hexInput):
 
         #convert decimal to eight bit binary ('08b')
         binary = format(decimal, '08b')
+
+
+        #return
+        return binary
+    except ValueError:
+        return "Invalid Hex"
 
